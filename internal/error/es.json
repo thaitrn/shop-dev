@@ -1,0 +1,5 @@
+{
+  "internal_server_error": "Error Interno del Servidor",
+  "not_found": "Recurso No Encontrado",
+  "bad_request": "Solicitud Incorrecta"
+}

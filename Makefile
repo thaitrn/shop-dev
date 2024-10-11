@@ -62,3 +62,7 @@ watch:
         fi
 
 .PHONY: all build run test clean watch docker-run docker-down itest
+
+# test coverage
+coverage:
+	@go test -cover ./...
