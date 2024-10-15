@@ -51,3 +51,45 @@ Clean up binary from the last build:
 ```bash
 make clean
 ```
+
+## Kiến trúc truyền thống MVC
+### Cấu trúc thư mục MVC
+Controller + VO/Service + BO/Repository + entity
+
+```bash
+server
+├── cmd              # start server
+├── common           # common
+├── configs          # Cấu hình tham số của biến
+├── database         # Cơ sở dữ liệu kết nối
+├── go.mod
+├── internal
+│   ├── controller   # controller
+│   ├── vo           # VO (View layer)
+│   ├── repository   # Truy cập lớp hiển thị
+│   └── entity       # Entity
+│   ├── pkg          # Nội bộ thư viện
+│   └── service      # Lớp logic nghiệp vụ
+│   └── bo           # BO (Business Object)
+├── main.go          # start server
+├── pkg              # bên ngoài thư viện
+├── router           # định tuyến hệ thống
+└── test             # kiểm tra thư mục
+
+```bash
+project
+├── Makefile
+├── configs
+├── docs
+├── global # biến toàn cục tham chiếu đến internal như là mongodb, mysql
+├── internal
+│   ├── repo
+│   ├── middleware
+│   ├── model
+│   ├── routers
+│   └── service
+├── pkg
+├── storage
+├── scripts
+└── third_pary #swager, ui
+
