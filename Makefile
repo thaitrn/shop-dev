@@ -1,5 +1,5 @@
 # Simple Makefile for a Go project
-
+APP_NANE = server
 # Build the application
 all: build test
 
@@ -11,7 +11,7 @@ build:
 
 # Run the application
 run:
-	@go run cmd/api/main.go
+	@go run cmd/${APP_NANE}/main.go
 # Create DB container
 docker-run:
 	@if docker compose up 2>/dev/null; then \

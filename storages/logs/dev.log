@@ -1,0 +1,2 @@
+{"level":"INFO","time":"2024-10-17T15:48:44.304+0700","caller":"0.initalize/run.go:13","msg":"Config log ok"}
+{"level":"DEBUG","time":"2024-10-17T15:49:14.302+0700","caller":"0.initalize/run.go:13","msg":"Config log ok"}
